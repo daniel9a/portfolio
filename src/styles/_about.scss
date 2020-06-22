@@ -1,0 +1,21 @@
+.about {
+  position: relative;
+  padding: 4em 2em;
+  overflow: hidden;
+
+  div {
+    padding: 1em;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: left;
+  }
+}

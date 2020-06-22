@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css");
 
-$site-font: "Raleway", sans-serif;
+// $site-font: "Raleway", sans-serif;
+$site-font: "Fira Code", sans-serif;
 
 $light-gray: rgb(240, 240, 240);
 $dark-gray: rgb(80, 80, 80);
