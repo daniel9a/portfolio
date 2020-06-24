@@ -1,0 +1,18 @@
+.card {
+  .list {
+    ul {
+      margin-left: 1em;
+      list-style-type: disc;
+    }
+  }
+
+  ul.stack-tags {
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+
+    li {
+      margin-right: 10px;
+    }
+  }
+}

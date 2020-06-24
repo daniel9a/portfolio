@@ -4,8 +4,11 @@ title: Museum Exhibit
 meta_title: Museum Exhibit | Daniel Andrade
 github: https://github.com/daniel9a/Museum_Exhibit
 demo: https://daniel9a.github.io/Museum_Exhibit/
-stack: HTML, CSS
+stack: 
+- HTML
+- CSS
 category: web development
+image:
 ---
 
 Web Page for Manetti Shrem Museum

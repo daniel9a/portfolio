@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Row, Col } from "reactstrap"
 import Img from "gatsby-image"
 
-import { useStaticQuery, StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -25,12 +25,12 @@ const About = () => {
     }
   `)
 
-  console.log(data.markdownRemark.frontmatter)
+  // console.log(data.markdownRemark.frontmatter)
 
   const frontmatter = data.markdownRemark.frontmatter
   const excerpt = data.markdownRemark.excerpt
 
-  console.log(frontmatter.image.childImageSharp.fluid)
+  // console.log(frontmatter.image.childImageSharp.fluid)
 
   // console.log(formatter.title)
 
@@ -57,19 +57,3 @@ const About = () => {
 }
 
 export default About
-
-// export const aboutQuery = graphql`
-//   query AboutQuery {
-//     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/about/" } }) {
-//       edges {
-//         node {
-//           frontmatter {
-//             templateKey
-//             title
-//           }
-//           excerpt
-//         }
-//       }
-//     }
-//   }
-// `

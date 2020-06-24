@@ -9,27 +9,27 @@ class TransparentBox extends Component {
       <div className="prof-box">
         <h1>I'm Daniel Andrade</h1>
         <div className="social-icons">
-          <Link
-            to="https://www.linkedin.com/in/daniel-andrade9/"
+          <a
+            href="https://www.linkedin.com/in/daniel-andrade9/"
             target="blank"
             className="icon"
           >
             <FaLinkedin />
-          </Link>
-          <Link
-            to="https://github.com/daniel9a/"
+          </a>
+          <a
+            href="https://github.com/daniel9a/"
             target="blank"
             className="icon"
           >
             <FaGithub />
-          </Link>
-          <Link
-            to="mailto:andrade.daniel111@gmail.com"
+          </a>
+          <a
+            href="mailto:andrade.daniel111@gmail.com"
             target="blank"
             className="icon"
           >
             <FaEnvelope />
-          </Link>
+          </a>
         </div>
       </div>
     )
