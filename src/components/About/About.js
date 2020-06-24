@@ -25,16 +25,8 @@ const About = () => {
     }
   `)
 
-  // console.log(data.markdownRemark.frontmatter)
-
   const frontmatter = data.markdownRemark.frontmatter
   const excerpt = data.markdownRemark.excerpt
-
-  // console.log(frontmatter.image.childImageSharp.fluid)
-
-  // console.log(formatter.title)
-
-  // console.log(data.)
 
   return (
     <div className="about">
