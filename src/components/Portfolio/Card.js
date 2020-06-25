@@ -4,6 +4,8 @@ import { FaLink, FaGithub } from "react-icons/fa"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
+import Icon from "../icons"
+
 const PortfolioCard = ({
   title,
   github,
@@ -27,9 +29,20 @@ const PortfolioCard = ({
         <ul className="stack-tags">
           {stacks.map(stack => (
             <li key={stack}>
-              <Badge color="primary" className="text-uppercase">
+              {console.log(typeof stack)}
+              <Icon icon={stack.toLowerCase()} />
+
+              {/* {icons[stack] ? (
+                <img src={icons[stack]} />
+              ) : (
+                <Badge color="primary" className="text-uppercase">
+                  {stack}
+                </Badge>
+              )} */}
+
+              {/* <Badge color="primary" className="text-uppercase">
                 {stack}
-              </Badge>
+              </Badge> */}
             </li>
           ))}
         </ul>
