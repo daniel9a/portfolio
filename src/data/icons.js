@@ -1,0 +1,27 @@
+// icon mapping
+
+module.exports = {
+  bootstrap: "https://img.icons8.com/color/64/000000/bootstrap.png",
+  c: "https://img.icons8.com/color/64/000000/c-programming.png",
+  cpp: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
+  css: "https://img.icons8.com/color/48/000000/css3.png",
+  django: "https://img.icons8.com/color/48/000000/django.png",
+  git: "https://img.icons8.com/color/48/000000/git.png",
+  github: "https://img.icons8.com/color/48/000000/github--v1.png",
+  html: "https://img.icons8.com/color/48/000000/html-5.png",
+  javascript: "https://img.icons8.com/color/48/000000/javascript.png",
+  jira: "https://img.icons8.com/color/48/000000/jira.png",
+  link: "https://img.icons8.com/fluent/48/000000/link.png",
+  linkedin: "https://img.icons8.com/color/48/000000/linkedin.png",
+  mongodb: "https://img.icons8.com/color/48/000000/mongodb.png",
+  mssql: "https://img.icons8.com/color/48/000000/microsoft-sql-server.png",
+  nodejs: "https://img.icons8.com/color/48/000000/nodejs.png",
+  postgreesql: "https://img.icons8.com/color/48/000000/postgreesql.png",
+  python: "https://img.icons8.com/color/64/000000/python.png",
+  react: "https://img.icons8.com/color/64/000000/react-native.png",
+  sql: "https://img.icons8.com/color/48/000000/sql.png",
+  unity: "https://img.icons8.com/ios-filled/64/000000/unity.png",
+  unreal: "https://img.icons8.com/windows/64/000000/unreal-engine.png",
+  visualStudio: "https://img.icons8.com/color/48/000000/visual-studio.png",
+  wordpress: "https://img.icons8.com/color/48/000000/wordpress.png",
+}

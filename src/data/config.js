@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: `Daniel Andrade`,
-  description: `Blog Starter for Gatsby`,
+  description: `Daniel Andrade Portfolio`,
   copyright: "Daniel Andrade",
   siteLogo: "", // path to logo
   siteUrl: "", // Domain of your website without pathPrefix.

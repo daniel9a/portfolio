@@ -1,7 +1,7 @@
 import React from "react"
 
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa" // Font Awesome
-import config from "../../../config"
+import config from "../../data/config"
 
 const Footer = () => (
   <div className="site-footer">
@@ -12,7 +12,7 @@ const Footer = () => (
         <li>
           {config.userLinkedIn && (
             <a
-              href="https://www.linkedin.com/in/daniel-andrade9/"
+              href={config.userLinkedIn}
               target="blank"
               className="icon linkedin"
             >
@@ -22,11 +22,7 @@ const Footer = () => (
         </li>
         <li>
           {config.userGithub && (
-            <a
-              href="https://github.com/daniel9a/"
-              target="blank"
-              className="icon github"
-            >
+            <a href={config.userGithub} target="blank" className="icon github">
               <FaGithub />
             </a>
           )}
