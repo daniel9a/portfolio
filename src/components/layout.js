@@ -7,6 +7,7 @@ import Landing from "./Landing/Landing"
 import About from "./About/About"
 import Portfolio from "./Portfolio/Portfolio"
 import Contact from "./Contact"
+import Footer from "./Footer"
 import "../styles/index.scss"
 
 const Layout = ({ children }) => (
@@ -27,9 +28,10 @@ const Layout = ({ children }) => (
         <About />
         <Portfolio />
         <Contact />
-        <div className="container" id="content">
+        <Footer />
+        {/* <div className="container" id="content">
           {children}
-        </div>
+        </div> */}
       </>
     )}
   />
