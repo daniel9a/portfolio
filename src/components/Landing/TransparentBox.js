@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React, { Component } from "react"
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa" // Font Awesome
 import config from "../../data/config"

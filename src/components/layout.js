@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Landing from "./Landing/Landing"
 import About from "./About/About"
+import Experience from "./Experience"
 import Portfolio from "./Portfolio/Portfolio"
 import Contact from "./Contact"
 import Footer from "./Footer"
@@ -26,6 +27,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <Landing />
         <About />
+        <Experience />
         <Portfolio />
         <Contact />
         <Footer />

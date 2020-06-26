@@ -1,0 +1,22 @@
+.experience {
+  padding: 2em 0em;
+  .card-title {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .card-container {
+    max-width: 60em;
+    // margin: 2em 0;
+    margin: auto;
+    // margin-top: 3em;
+    margin-bottom: 3em;
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+    hr:last-child {
+      margin-top: 3em;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react"
 
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa" // Font Awesome
+import { FaLinkedin, FaGithub } from "react-icons/fa" // Font Awesome
 import config from "../../data/config"
 
 const Footer = () => (
