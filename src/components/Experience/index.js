@@ -70,7 +70,7 @@ const Resume = () => {
                     </h4>
                     <h4>{node.frontmatter.location}</h4>
                     <p>{node.excerpt}</p>
-                    <hr />
+                    <hr className="line-break" />
                   </CardText>
                 </Col>
               </Row>

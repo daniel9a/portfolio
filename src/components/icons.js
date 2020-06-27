@@ -1,12 +1,12 @@
 import React from "react"
 import { Badge } from "reactstrap"
 
-const Icons = ({ icon }) => {
+const Icons = ({ icon, size }) => {
   switch (icon) {
     case "bootstrap":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/bootstrap.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/bootstrap.png"}
           title={icon}
           alt={icon}
         />
@@ -14,7 +14,9 @@ const Icons = ({ icon }) => {
     case "c":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/c-programming.png"
+          src={
+            "https://img.icons8.com/color/" + size + "/000000/c-programming.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -23,7 +25,11 @@ const Icons = ({ icon }) => {
     case "cpp":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+          src={
+            "https://img.icons8.com/color/" +
+            size +
+            "/000000/c-plus-plus-logo.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -31,7 +37,7 @@ const Icons = ({ icon }) => {
     case "css":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/css3.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/css3.png"}
           title={icon}
           alt={icon}
         />
@@ -39,7 +45,7 @@ const Icons = ({ icon }) => {
     case "django":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/django.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/django.png"}
           title={icon}
           alt={icon}
         />
@@ -47,7 +53,7 @@ const Icons = ({ icon }) => {
     case "git":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/git.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/git.png"}
           title={icon}
           alt={icon}
         />
@@ -55,7 +61,9 @@ const Icons = ({ icon }) => {
     case "github":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/github--v1.png"
+          src={
+            "https://img.icons8.com/color/" + size + "/000000/github--v1.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -63,7 +71,7 @@ const Icons = ({ icon }) => {
     case "html":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/html-5.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/html-5.png"}
           title={icon}
           alt={icon}
         />
@@ -72,7 +80,9 @@ const Icons = ({ icon }) => {
     case "js":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/javascript.png"
+          src={
+            "https://img.icons8.com/color/" + size + "/000000/javascript.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -80,7 +90,7 @@ const Icons = ({ icon }) => {
     case "jira":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/jira.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/jira.png"}
           title={icon}
           alt={icon}
         />
@@ -88,7 +98,7 @@ const Icons = ({ icon }) => {
     case "link":
       return (
         <img
-          src="https://img.icons8.com/fluent/48/000000/link.png"
+          src={"https://img.icons8.com/fluent/" + size + "/000000/link.png"}
           title={icon}
           alt={icon}
         />
@@ -96,7 +106,7 @@ const Icons = ({ icon }) => {
     case "linkedin":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/linkedin.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/linkedin.png"}
           title={icon}
           alt={icon}
         />
@@ -104,7 +114,7 @@ const Icons = ({ icon }) => {
     case "mongodb":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/mongodb.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/mongodb.png"}
           title={icon}
           alt={icon}
         />
@@ -112,7 +122,11 @@ const Icons = ({ icon }) => {
     case "mssql":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png"
+          src={
+            "https://img.icons8.com/color/" +
+            size +
+            "/000000/microsoft-sql-server.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -120,7 +134,7 @@ const Icons = ({ icon }) => {
     case "nodejs":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/nodejs.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/nodejs.png"}
           title={icon}
           alt={icon}
         />
@@ -128,7 +142,9 @@ const Icons = ({ icon }) => {
     case "postgreesql":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/postgreesql.png"
+          src={
+            "https://img.icons8.com/color/" + size + "/000000/postgreesql.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -136,7 +152,7 @@ const Icons = ({ icon }) => {
     case "python":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/python.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/python.png"}
           title={icon}
           alt={icon}
         />
@@ -144,7 +160,9 @@ const Icons = ({ icon }) => {
     case "react":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/react-native.png"
+          src={
+            "https://img.icons8.com/color/" + size + "/000000/react-native.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -152,7 +170,7 @@ const Icons = ({ icon }) => {
     case "sql":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/sql.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/sql.png"}
           title={icon}
           alt={icon}
         />
@@ -160,7 +178,9 @@ const Icons = ({ icon }) => {
     case "unity":
       return (
         <img
-          src="https://img.icons8.com/ios-filled/48/000000/unity.png"
+          src={
+            "https://img.icons8.com/ios-filled/" + size + "/000000/unity.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -168,7 +188,11 @@ const Icons = ({ icon }) => {
     case "unreal":
       return (
         <img
-          src="https://img.icons8.com/windows/48/000000/unreal-engine.png"
+          src={
+            "https://img.icons8.com/windows/" +
+            size +
+            "/000000/unreal-engine.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -176,7 +200,9 @@ const Icons = ({ icon }) => {
     case "visual studio":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/visual-studio.png"
+          src={
+            "https://img.icons8.com/color/" + size + "/000000/visual-studio.png"
+          }
           title={icon}
           alt={icon}
         />
@@ -184,7 +210,7 @@ const Icons = ({ icon }) => {
     case "wordpress":
       return (
         <img
-          src="https://img.icons8.com/color/48/000000/wordpress.png"
+          src={"https://img.icons8.com/color/" + size + "/000000/wordpress.png"}
           title={icon}
           alt={icon}
         />

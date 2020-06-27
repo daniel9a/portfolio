@@ -7,7 +7,7 @@ current: false
 startDate: January 2019
 endDate: June 2019
 location: Davis, California
-logo: ../../images/uc-davis-logo.jpg
+logo: ../../images/experience/uc-davis-logo.jpg
 skills: django, python, html, css, javascript, git, sql
 ---
 

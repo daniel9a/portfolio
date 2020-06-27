@@ -12,11 +12,12 @@
     margin-bottom: 3em;
 
     .logo {
-      width: 100px;
-      height: 100px;
+      max-width: 100px;
+      max-height: 100px;
     }
-    hr:last-child {
+    hr.line-break {
       margin-top: 3em;
+      // border: 1px solid black;
     }
   }
 }

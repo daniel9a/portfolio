@@ -16,19 +16,19 @@ const PortfolioCard = ({
 }) => {
   return (
     <Card className="rounded shadow-lg">
-      {/* <Img className="card-image-top" fluid={image} /> */}
+      <Img className="card-image-top" fluid={image} />
       <div className="card-img-overlay">
         <div className="btn btn-light btn-sm">{category}</div>
       </div>
       <CardBody>
         <CardTitle>
-          <h1>{title}</h1>
+          <h3>{title}</h3>
         </CardTitle>
         <CardText>{body}</CardText>
         <ul className="stack-tags">
           {stacks.map(stack => (
             <li key={stack}>
-              <Icon icon={stack.toLowerCase()} />
+              <Icon className="icon" icon={stack.toLowerCase()} size={32} />
             </li>
           ))}
         </ul>

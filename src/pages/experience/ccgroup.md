@@ -7,7 +7,7 @@ current: true
 startDate: September 2019
 endDate: Current
 location: San Mateo, California
-logo: ../../images/ccgroup-logo.jpg
+logo: ../../images/experience/ccgroup-logo.jpg
 skills: c++, mssql, sql, jira, visual studio, apache ant, tortoise svn
 ---
 

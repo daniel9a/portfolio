@@ -22,7 +22,7 @@ const Portfolio = () => {
               demo
               image {
                 childImageSharp {
-                  fluid(maxWidth: 500, maxHeight: 500) {
+                  fluid(maxWidth: 360, maxHeight: 240) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -41,10 +41,11 @@ const Portfolio = () => {
         <Row>
           {portfolioData.allMarkdownRemark.edges.map(({ node }) => (
             <Col lg="4" md="4" className="mb-5">
+              {console.log(node.frontmatter.image.childImageSharp.fluid)}
               <PortfolioCard
                 key={node.id}
                 title={node.frontmatter.title}
-                // image={node.frontmatter.image.childImageSharp.fluid}
+                image={node.frontmatter.image.childImageSharp.fluid}
                 category={node.frontmatter.category}
                 stacks={node.frontmatter.stack}
                 body={node.excerpt}

@@ -7,7 +7,7 @@ current: false
 startDate: September 2017
 endDate: August 2019
 location: Davis, Califonia
-logo: ../../images/uc-davis-logo.jpg
+logo: ../../images/experience/uc-davis-logo.jpg
 skills: 
 ---
 

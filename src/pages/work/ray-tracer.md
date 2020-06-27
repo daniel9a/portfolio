@@ -8,7 +8,7 @@ stack:
 - C++
 - OpenGL
 category: computer graphics
-image:
+image: ../../images/portfolio/ray-tracer.png
 ---
 
 A basic Ray Tracer

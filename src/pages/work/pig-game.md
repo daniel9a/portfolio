@@ -9,7 +9,7 @@ stack:
 - CSS
 - JS
 category: web development
-image:
+image: ../../images/portfolio/piggame.png
 ---
 
 Dice game for two
