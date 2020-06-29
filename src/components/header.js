@@ -10,6 +10,9 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap"
+import AnchorLink from "react-anchor-link-smooth-scroll"
+
+import ToggleMode from "./ToggleMode"
 
 class Header extends React.Component {
   constructor(props) {
@@ -35,13 +38,27 @@ class Header extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="/team">About</NavLink>
+                  <NavLink>
+                    <AnchorLink href="#about">About</AnchorLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/tags">Resume</NavLink>
+                  <NavLink>
+                    <AnchorLink href="#experience">Experience</AnchorLink>
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/about">Portfolio</NavLink>
+                  <NavLink>
+                    <AnchorLink href="#portfolio">Portfolio</AnchorLink>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink>
+                    <AnchorLink href="#contact">Contact</AnchorLink>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <ToggleMode />
                 </NavItem>
               </Nav>
             </Collapse>

@@ -29,7 +29,7 @@ const About = () => {
   const excerpt = data.markdownRemark.excerpt
 
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="container">
         <Row className="justify-content-center">
           <Col lg={{ size: 3 }}>

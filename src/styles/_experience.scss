@@ -1,5 +1,10 @@
 .experience {
   padding: 2em 0em;
+  .dark-mode {
+    .card {
+      background-color: $dark-mode-cards;
+    }
+  }
   .card-title {
     margin-top: 3em;
     margin-bottom: 3em;

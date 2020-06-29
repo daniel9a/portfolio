@@ -5,8 +5,38 @@ body {
   background-color: $light-gray;
   font-family: $site-font;
 }
+
+body.dark-mode {
+  background-color: $dark-mode-background;
+  color: white;
+  .navbar {
+    background-color: $dark-mode-cards;
+    transition: background-color 0.3s ease;
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link,
+  .navbar-light .navbar-brand {
+    color: white;
+    &:hover {
+      color: #007bff;
+    }
+  }
+  .card {
+    background-color: $dark-mode-cards;
+    transition: background-color 0.3s ease;
+  }
+  hr {
+    background-color: white;
+  }
+}
+
 a {
-  color: #0056b3;
+  // color: #0056b3;
+  color: #6d6d6d;
+  text-decoration: none;
   &:hover {
     color: #007bff;
     text-decoration: none;
@@ -35,3 +65,17 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+// .navbar {
+//   font-size: 20px;
+//   background-color: transparent;
+//   transition: background-color 0.7s ease-out;
+// }
+
+// .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+//   color: white;
+// }
+
+// .navbar.scrolled {
+//   background-color:  #434343;
+// }

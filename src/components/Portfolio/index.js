@@ -1,6 +1,5 @@
 import React from "react"
 import { Row, Col } from "reactstrap"
-import Img from "gatsby-image"
 
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -35,13 +34,12 @@ const Portfolio = () => {
   `)
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
       <div className="container">
         <h1 className="text-center">Portfolio</h1>
         <Row>
           {portfolioData.allMarkdownRemark.edges.map(({ node }) => (
             <Col lg="4" md="4" className="mb-5">
-              {console.log(node.frontmatter.image.childImageSharp.fluid)}
               <PortfolioCard
                 key={node.id}
                 title={node.frontmatter.title}

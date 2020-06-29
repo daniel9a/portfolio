@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React, { Component } from "react"
 import ParticlesComponent from "./ParticlesComponent"
 import TransparentBox from "./TransparentBox"

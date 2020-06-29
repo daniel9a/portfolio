@@ -15,7 +15,7 @@ const PortfolioCard = ({
   body,
 }) => {
   return (
-    <Card className="rounded shadow-lg">
+    <Card className="rounded shadow-lg ">
       <Img className="card-image-top" fluid={image} />
       <div className="card-img-overlay">
         <div className="btn btn-light btn-sm">{category}</div>

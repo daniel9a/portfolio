@@ -1,13 +1,5 @@
-import React, { Component } from "react"
-import {
-  Row,
-  Col,
-  Badge,
-  Card,
-  CardTitle,
-  CardText,
-  CardBody,
-} from "reactstrap"
+import React from "react"
+import { Row, Col, Card, CardTitle, CardText, CardBody } from "reactstrap"
 import Img from "gatsby-image"
 
 import { useStaticQuery, graphql } from "gatsby"
@@ -46,7 +38,7 @@ const Resume = () => {
   `)
 
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <div className="container">
         <Card className="experience-container rounded shadow-lg">
           <CardBody>

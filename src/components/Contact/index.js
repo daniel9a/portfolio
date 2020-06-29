@@ -1,11 +1,10 @@
 import React, { Component } from "react"
-import { Row } from "reactstrap"
 import ContactForm from "./ContactForm"
 
 export class Contact extends Component {
   render() {
     return (
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="container">
           <h1>Contact</h1>
           <div className="container contact-message">
