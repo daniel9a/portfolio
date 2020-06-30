@@ -42,21 +42,21 @@ const PortfolioCard = ({
         <hr />
         <div className="links">
           {demo && (
-            <CardLink href={demo}>
-              <a href={demo} target="blank" className="icon btn btn-secondary">
-                <FaLink /> Source
-              </a>
+            <CardLink
+              href={demo}
+              target="blank"
+              className="icon btn btn-secondary"
+            >
+              <FaLink /> Source
             </CardLink>
           )}
           {github && (
-            <CardLink href={github}>
-              <a
-                href={github}
-                target="blank"
-                className="icon btn btn-secondary"
-              >
-                <FaGithub /> Github
-              </a>
+            <CardLink
+              href={github}
+              target="blank"
+              className="icon btn btn-secondary"
+            >
+              <FaGithub /> Github
             </CardLink>
           )}
         </div>
