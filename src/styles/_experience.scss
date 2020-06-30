@@ -2,6 +2,17 @@
   padding: 2em 0em;
   .card {
     margin: 1em;
+    .card-text {
+      h3 {
+        font-weight: 600;
+      }
+      h5 {
+        font-weight: 200;
+      }
+      // p {
+      //   font-size: 0.9em;
+      // }
+    }
     .list {
       ul {
         margin-left: 1em;
@@ -29,9 +40,7 @@
   }
   .card-container {
     max-width: 60em;
-    // margin: 2em 0;
     margin: auto;
-    // margin-top: 3em;
     margin-bottom: 3em;
 
     .logo {
@@ -40,7 +49,6 @@
     }
     hr.line-break {
       margin-top: 3em;
-      // border: 1px solid black;
     }
   }
 }

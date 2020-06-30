@@ -58,18 +58,18 @@ const Resume = () => {
               <Row className="container justify-content-center card-container">
                 <Col md="2">
                   <Img
-                    className="logo"
+                    className="logo shadow-lg"
                     fluid={node.frontmatter.logo.childImageSharp.fluid}
                   />
                 </Col>
                 <Col>
                   <CardText>
-                    <h2>{node.frontmatter.position}</h2>
-                    <h3>{node.frontmatter.company}</h3>
-                    <h4>
+                    <h3>{node.frontmatter.position}</h3>
+                    <h4>{node.frontmatter.company}</h4>
+                    <h5>
                       {node.frontmatter.startDate} - {node.frontmatter.endDate}
-                    </h4>
-                    <h4>{node.frontmatter.location}</h4>
+                    </h5>
+                    <h5>{node.frontmatter.location}</h5>
                     <p>{node.excerpt}</p>
                     <ul className="stack-tags">
                       {node.frontmatter.skills.map(skill => (
