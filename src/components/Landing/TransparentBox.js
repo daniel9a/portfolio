@@ -22,13 +22,13 @@ class TransparentBox extends Component {
               <FaGithub />
             </a>
           )}
-          <a
+          {/* <a
             href="mailto:andrade.daniel111@gmail.com"
             target="blank"
             className="icon"
           >
             <FaEnvelope />
-          </a>
+          </a> */}
         </div>
       </div>
     )

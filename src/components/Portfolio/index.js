@@ -3,7 +3,7 @@ import { Row, Col } from "reactstrap"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import PortfolioCard from "./Card"
+import PortfolioCard from "./PortfolioCard"
 
 const Portfolio = () => {
   const portfolioData = useStaticQuery(graphql`

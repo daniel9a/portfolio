@@ -14,6 +14,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import ToggleMode from "./ToggleMode"
 
+import resume from "../../static/Daniel_Andrade_Resume.pdf"
+
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -58,6 +60,11 @@ class Header extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
+                  <a href={resume} target="blank" className="btn btn-secondary">
+                    Resume
+                  </a>
+                </NavItem>
+                <NavItem className="ml-4">
                   <ToggleMode />
                 </NavItem>
               </Nav>

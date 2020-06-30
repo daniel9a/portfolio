@@ -1,5 +1,13 @@
 import React from "react"
-import { Row, Col, Card, CardTitle, CardText, CardBody } from "reactstrap"
+import {
+  Badge,
+  Row,
+  Col,
+  Card,
+  CardTitle,
+  CardText,
+  CardBody,
+} from "reactstrap"
 import Img from "gatsby-image"
 
 import { useStaticQuery, graphql } from "gatsby"
@@ -22,6 +30,7 @@ const Resume = () => {
               startDate
               endDate
               current
+              skills
               logo {
                 childImageSharp {
                   fluid(maxWidth: 100, maxHeight: 100) {
@@ -62,6 +71,15 @@ const Resume = () => {
                     </h4>
                     <h4>{node.frontmatter.location}</h4>
                     <p>{node.excerpt}</p>
+                    <ul className="stack-tags">
+                      {node.frontmatter.skills.map(skill => (
+                        <li key={skill}>
+                          <Badge color="secondary" className="text-uppercase">
+                            {skill.toLowerCase()}
+                          </Badge>
+                        </li>
+                      ))}
+                    </ul>
                     <hr className="line-break" />
                   </CardText>
                 </Col>

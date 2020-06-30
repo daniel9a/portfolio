@@ -34,7 +34,7 @@ const About = () => {
         <Row className="justify-content-center">
           <Col lg={{ size: 3 }}>
             <Img
-              className="profile-pic"
+              className="profile-pic shadow-lg"
               fluid={frontmatter.image.childImageSharp.fluid}
             />
           </Col>

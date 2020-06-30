@@ -1,10 +1,28 @@
 .experience {
   padding: 2em 0em;
-  .dark-mode {
-    .card {
-      background-color: $dark-mode-cards;
+  .card {
+    margin: 1em;
+    .list {
+      ul {
+        margin-left: 1em;
+        list-style-type: disc;
+      }
+    }
+
+    ul.stack-tags {
+      padding: 0;
+      display: inline-flex;
+      list-style: none;
+
+      li {
+        margin-right: 10px;
+      }
+    }
+    .links {
+      font-size: 1.5em;
     }
   }
+
   .card-title {
     margin-top: 3em;
     margin-bottom: 3em;

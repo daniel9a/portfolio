@@ -5,8 +5,6 @@ import config from "../../data/config"
 
 const Footer = () => (
   <div className="site-footer">
-    {/* <h4 className="text-center">{config.siteTitle}</h4>
-    <p className="text-center">Follow me on social media</p> */}
     <div className="footer-social-links">
       <ul className="social-links-list">
         <li>
