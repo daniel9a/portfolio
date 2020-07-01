@@ -29,7 +29,6 @@ const Resume = () => {
               skills
               startDate
               endDate
-              current
               skills
               logo {
                 childImageSharp {

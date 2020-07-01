@@ -1,12 +1,12 @@
 ---
-templateKey: museum-exhibit
+templateKey: work
 title: Museum Exhibit
-meta_title: Museum Exhibit | Daniel Andrade
+slug: museum
 github: https://github.com/daniel9a/Museum_Exhibit
 demo: https://daniel9a.github.io/Museum_Exhibit/
-stack: 
-- HTML
-- CSS
+stack:
+  - HTML
+  - CSS
 category: web development
 image: ../../images/portfolio/museum.png
 ---

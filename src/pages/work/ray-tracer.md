@@ -1,12 +1,12 @@
 ---
-templateKey: ray-tracer
+templateKey: work
 title: Ray Tracer
-meta_title: Ray Tracer | Daniel Andrade
+slug: ray-tracer
 github: https://github.com/daniel9a/Computer-Graphics/tree/master/Ray_Tracer
 demo:
-stack: 
-- C++
-- OpenGL
+stack:
+  - C++
+  - OpenGL
 category: computer graphics
 image: ../../images/portfolio/ray-tracer.png
 ---

@@ -1,7 +1,6 @@
 ---
 templateKey: about
 title: About Me
-meta_title: About Me | Daniel Andrade
 image: ../../images/bitmoji.png
 ---
 

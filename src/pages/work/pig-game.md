@@ -1,13 +1,13 @@
 ---
-templateKey: pig-game
+templateKey: work
 title: Pig Game
-meta_title: Pig Game | Daniel Andrade
+slug: pig-game
 github: https://github.com/daniel9a/PigDieGame
 demo: https://daniel9a.github.io/PigDieGame/
-stack: 
-- HTML
-- CSS
-- JS
+stack:
+  - HTML
+  - CSS
+  - JS
 category: web development
 image: ../../images/portfolio/piggame.png
 ---
