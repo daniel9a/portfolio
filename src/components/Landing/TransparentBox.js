@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa" // Font Awesome
+import { FaLinkedin, FaGithub } from "react-icons/fa" // Font Awesome
 import config from "../../data/config"
 
 class TransparentBox extends Component {
@@ -22,13 +22,6 @@ class TransparentBox extends Component {
               <FaGithub />
             </a>
           )}
-          {/* <a
-            href="mailto:andrade.daniel111@gmail.com"
-            target="blank"
-            className="icon"
-          >
-            <FaEnvelope />
-          </a> */}
         </div>
       </div>
     )

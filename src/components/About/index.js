@@ -10,7 +10,6 @@ const About = () => {
       markdownRemark(frontmatter: { templateKey: { regex: "/about/" } }) {
         frontmatter {
           templateKey
-          meta_title
           title
           image {
             childImageSharp {
