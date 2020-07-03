@@ -8,7 +8,7 @@ stack:
   - HTML
   - CSS
 category: web development
-image: ../../images/portfolio/museum.png
+image: /img/museum.png
 ---
 
 Web Page for Manetti Shrem Museum

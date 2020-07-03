@@ -40,6 +40,7 @@ const Portfolio = () => {
         <Row>
           {portfolioData.allMarkdownRemark.edges.map(({ node }) => (
             <Col lg="4" md="4" className="mb-5">
+              {console.log(node.frontmatter.image.childImageSharp.fluid)}
               <PortfolioCard
                 key={node.id}
                 title={node.frontmatter.title}

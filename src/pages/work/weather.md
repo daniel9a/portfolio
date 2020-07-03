@@ -9,7 +9,7 @@ stack:
   - CSS
   - JS
 category: web development
-image: ../../images/portfolio/weather.png
+image: /img/weather.png
 ---
 
 6 hour weather application

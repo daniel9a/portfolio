@@ -7,7 +7,7 @@ position: Software Engineer Intern
 startDate: January 2019
 endDate: June 2019
 location: Davis, California
-logo: ../../images/experience/uc-davis-logo.jpg
+logo: /img/uc-davis-logo.jpg
 skills:
   - django
   - python

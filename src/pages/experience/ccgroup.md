@@ -7,7 +7,7 @@ position: Software Engineer
 startDate: September 2019
 endDate: Current
 location: San Mateo, California
-logo: ../../images/experience/ccgroup-logo.jpg
+logo: /img/ccgroup-logo.jpg
 skills:
   - c++
   - mssql

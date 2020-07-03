@@ -57,10 +57,10 @@ collections:
           default: "work",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
       - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Demo", name: "demo", widget: "string" }
       - { label: "Github", name: "github", widget: "string" }
-      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Demo", name: "demo", widget: "string" }
       - { label: "Stack", name: "stack", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }

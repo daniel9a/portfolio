@@ -8,6 +8,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/img/`,
+        name: "uploads",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
@@ -22,7 +29,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -46,8 +52,29 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        // Path to your Netlify CMS config file
+        cmsConfig: `/static/admin/config.yml`,
+      },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          // gatsby-remark-relative-images must
+          // go before gatsby-remark-images
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {},
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-netlify-cms`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

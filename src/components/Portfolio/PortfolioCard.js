@@ -30,7 +30,7 @@ const PortfolioCard = ({
           <h3>{title}</h3>
         </CardTitle>
         <CardText>{body}</CardText>
-        <ul className="stack-tags">
+        <ul className="container stack-tags">
           {stacks.map(stack => (
             <li key={stack}>
               <Badge color="secondary" className="text-uppercase">
