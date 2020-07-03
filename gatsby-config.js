@@ -1,8 +1,13 @@
+const config = require("./src/data/config")
+
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: config.siteTitle,
+    description: config.description,
+    author: config.author,
+    siteUrl: "https://vibrant-hoover-b3acdc.netlify.app/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

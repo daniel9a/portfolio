@@ -1,9 +1,9 @@
 module.exports = {
   siteTitle: `Daniel Andrade`,
-  description: `Daniel Andrade Portfolio`,
+  description: `Daniel Andrade's Portfolio Site`,
   copyright: "Daniel Andrade",
   siteLogo: "", // path to logo
-  siteUrl: "", // Domain of your website without pathPrefix.
+  siteUrl: "https://vibrant-hoover-b3acdc.netlify.app/", // Domain of your website without pathPrefix.
   // Author Info
   author: `Daniel Andrade`,
   // Social Media Info Use URLs
