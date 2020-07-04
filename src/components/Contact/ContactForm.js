@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Button, Form, FormGroup, Input } from "reactstrap"
+import { navigateTo } from "gatsby-link"
 
 function encode(data) {
   return Object.keys(data)
@@ -28,6 +29,8 @@ export class ContactForm extends Component {
         ...this.state,
       }),
     })
+      .then(() => navigateTo("/"))
+      .catch(error => alert(error))
     // .then(() => navigateTo(form.getAttribute("action")))
     // .catch(error => alert(error));
   }
