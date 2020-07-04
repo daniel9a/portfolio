@@ -1,7 +1,37 @@
 import React, { Component } from "react"
 import { Button, Form, FormGroup, Input } from "reactstrap"
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 export class ContactForm extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+    // .then(() => navigateTo(form.getAttribute("action")))
+    // .catch(error => alert(error));
+  }
+
   render() {
     return (
       <div className="container contact-form">
@@ -10,6 +40,7 @@ export class ContactForm extends Component {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
         >
           <FormGroup>
             <Input
