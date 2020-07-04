@@ -31,7 +31,7 @@ const About = () => {
     <div className="about" id="about">
       <div className="container">
         <Row className="justify-content-center">
-          <Col lg={{ size: 3 }}>
+          <Col lg={{ size: 3 }} className="col-auto">
             <Img
               className="profile-pic shadow-lg"
               fluid={frontmatter.image.childImageSharp.fluid}

@@ -7,7 +7,7 @@ export class ContactForm extends Component {
       <div className="container contact-form">
         <Form
           name="contact-form"
-          method="post"
+          method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >

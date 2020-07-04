@@ -57,7 +57,7 @@ const Resume = () => {
               <Row className="container justify-content-center card-container">
                 <Col md="2">
                   <Img
-                    className="logo shadow-lg"
+                    className="logo shadow-lg mb-sm-3"
                     fluid={node.frontmatter.logo.childImageSharp.fluid}
                   />
                 </Col>

@@ -64,7 +64,7 @@ class Header extends React.Component {
                     Resume
                   </a>
                 </NavItem>
-                <NavItem className="ml-4">
+                <NavItem className="ml-md-4">
                   <ToggleMode />
                 </NavItem>
               </Nav>
