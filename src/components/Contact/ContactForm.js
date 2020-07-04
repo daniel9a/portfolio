@@ -39,7 +39,7 @@ export class ContactForm extends Component {
               placeholder="Message"
             />
           </FormGroup>
-          <Button size="lg" block>
+          <Button type="submit" size="lg" block>
             Send
           </Button>
         </Form>
