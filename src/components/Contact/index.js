@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import ContactForm from "./ContactForm"
+// import ContactForm from "./ContactForm"
+import DummyForm from "./DummyForm"
 
 export class Contact extends Component {
   render() {
@@ -14,8 +15,8 @@ export class Contact extends Component {
               soon as I can
             </p>
           </div>
-
-          <ContactForm />
+          <DummyForm />
+          {/* <ContactForm /> */}
         </div>
       </div>
     )
