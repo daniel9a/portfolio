@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import ContactForm from "./ContactForm"
-// import DummyForm from "./DummyForm"
 
 export class Contact extends Component {
   render() {
