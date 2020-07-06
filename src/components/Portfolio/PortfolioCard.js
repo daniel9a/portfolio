@@ -41,7 +41,7 @@ const PortfolioCard = ({
         </ul>
         <hr />
         <div className="links">
-          {demo && (
+          {demo !== "null" && demo && (
             <CardLink
               href={demo}
               target="blank"
