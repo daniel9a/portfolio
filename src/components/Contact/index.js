@@ -11,7 +11,7 @@ export class Contact extends Component {
         <VisibilitySensor once>
           {({ isVisible }) => (
             <Spring
-              delay={200}
+              delay={100}
               to={{
                 opacity: isVisible ? 1 : 0,
               }}

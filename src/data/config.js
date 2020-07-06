@@ -1,5 +1,6 @@
 module.exports = {
   siteTitle: `Daniel Andrade`,
+  siteTitleAlt: `Daniel Andrade's Portfolio`,
   description: `Daniel Andrade's Portfolio Site`,
   copyright: "Daniel Andrade",
   siteLogo: "", // path to logo
