@@ -6,7 +6,7 @@ import { FaRegSun, FaRegMoon } from "react-icons/fa"
 const Toggle = ({ checked, onChange }) => (
   <div className="button-switch">
     <button className="switch" id="switch-color" onClick={onChange}>
-      {checked ? <FaRegMoon /> : <FaRegSun />}
+      {checked ? <FaRegSun /> : <FaRegMoon />}
     </button>
   </div>
 )

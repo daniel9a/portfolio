@@ -11,6 +11,8 @@ import {
 import Img from "gatsby-image"
 
 import { useStaticQuery, graphql } from "gatsby"
+import { Spring } from "react-spring/renderprops"
+import VisibilitySensor from "../VisibilitySensor"
 
 const Resume = () => {
   const experienceData = useStaticQuery(graphql`
@@ -50,38 +52,87 @@ const Resume = () => {
       <div className="container">
         <Card className="experience-container rounded shadow-lg">
           <CardBody>
-            <CardTitle>
-              <h1>Experience</h1>
-            </CardTitle>
+            <VisibilitySensor once>
+              {({ isVisible }) => (
+                <Spring
+                  delay={300}
+                  to={{
+                    opacity: isVisible ? 1 : 0,
+                  }}
+                >
+                  {({ opacity }) => (
+                    <CardTitle style={{ opacity }}>
+                      <h1>Experience</h1>
+                    </CardTitle>
+                  )}
+                </Spring>
+              )}
+            </VisibilitySensor>
             {experienceData.allMarkdownRemark.edges.map(({ node }) => (
               <Row className="container justify-content-center card-container">
-                <Col md="2">
-                  <Img
-                    className="logo shadow-lg mb-sm-3"
-                    fluid={node.frontmatter.logo.childImageSharp.fluid}
-                  />
-                </Col>
-                <Col>
-                  <CardText>
-                    <h3>{node.frontmatter.position}</h3>
-                    <h4>{node.frontmatter.company}</h4>
-                    <h5>
-                      {node.frontmatter.startDate} - {node.frontmatter.endDate}
-                    </h5>
-                    <h5>{node.frontmatter.location}</h5>
-                    <p>{node.excerpt}</p>
-                    <ul className="stack-tags">
-                      {node.frontmatter.skills.map(skill => (
-                        <li key={skill}>
-                          <Badge color="secondary" className="text-uppercase">
-                            {skill.toLowerCase()}
-                          </Badge>
-                        </li>
-                      ))}
-                    </ul>
-                    <hr className="line-break" />
-                  </CardText>
-                </Col>
+                <VisibilitySensor once>
+                  {({ isVisible }) => (
+                    <Spring
+                      delay={200}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                        transform: isVisible
+                          ? `translateX(0%)`
+                          : `translateX(-10%)`,
+                      }}
+                    >
+                      {({ opacity, transform }) => (
+                        <Col md="2" style={{ opacity, transform }}>
+                          <Img
+                            className="logo shadow-lg mb-sm-3"
+                            fluid={node.frontmatter.logo.childImageSharp.fluid}
+                          />
+                        </Col>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+                <VisibilitySensor once>
+                  {({ isVisible }) => (
+                    <Spring
+                      delay={200}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                        transform: isVisible
+                          ? `translateX(0%)`
+                          : `translateX(10%)`,
+                      }}
+                    >
+                      {({ opacity, transform }) => (
+                        <Col style={{ opacity, transform }}>
+                          <CardText>
+                            <h3>{node.frontmatter.position}</h3>
+                            <h4>{node.frontmatter.company}</h4>
+                            <h5>
+                              {node.frontmatter.startDate} -{" "}
+                              {node.frontmatter.endDate}
+                            </h5>
+                            <h5>{node.frontmatter.location}</h5>
+                            <p>{node.excerpt}</p>
+                            <ul className="stack-tags">
+                              {node.frontmatter.skills.map(skill => (
+                                <li key={skill}>
+                                  <Badge
+                                    color="secondary"
+                                    className="text-uppercase"
+                                  >
+                                    {skill.toLowerCase()}
+                                  </Badge>
+                                </li>
+                              ))}
+                            </ul>
+                            <hr className="line-break" />
+                          </CardText>
+                        </Col>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
               </Row>
             ))}
           </CardBody>

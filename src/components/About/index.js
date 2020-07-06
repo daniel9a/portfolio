@@ -1,8 +1,10 @@
 import React from "react"
 import { Row, Col } from "reactstrap"
 import Img from "gatsby-image"
-
 import { useStaticQuery, graphql } from "gatsby"
+
+import { Spring } from "react-spring/renderprops"
+import VisibilitySensor from "../VisibilitySensor"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -29,20 +31,33 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <div className="container">
-        <Row className="justify-content-center">
-          <Col lg={{ size: 3 }} className="col-auto">
-            <Img
-              className="profile-pic shadow-lg"
-              fluid={frontmatter.image.childImageSharp.fluid}
-            />
-          </Col>
-          <Col lg={{ size: 6 }}>
-            <h1>{frontmatter.title}</h1>
-            <p>{excerpt}</p>
-          </Col>
-        </Row>
-      </div>
+      <VisibilitySensor once>
+        {({ isVisible }) => (
+          <Spring
+            delay={300}
+            to={{
+              opacity: isVisible ? 1 : 0,
+            }}
+          >
+            {({ opacity }) => (
+              <div className="container" style={{ opacity }}>
+                <Row className="justify-content-center">
+                  <Col lg={{ size: 3 }} className="col-auto">
+                    <Img
+                      className="profile-pic shadow-lg"
+                      fluid={frontmatter.image.childImageSharp.fluid}
+                    />
+                  </Col>
+                  <Col lg={{ size: 6 }}>
+                    <h1>{frontmatter.title}</h1>
+                    <p>{excerpt}</p>
+                  </Col>
+                </Row>
+              </div>
+            )}
+          </Spring>
+        )}
+      </VisibilitySensor>
     </div>
   )
 }
