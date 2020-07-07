@@ -50,7 +50,7 @@ const PortfolioCard = ({
               <FaLink /> Source
             </CardLink>
           )}
-          {github && (
+          {github !== "null" && github && (
             <CardLink
               href={github}
               target="blank"
