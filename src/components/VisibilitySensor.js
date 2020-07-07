@@ -16,6 +16,8 @@ class VisibilitySensor extends Component {
     return (
       <VSensor
         active={active}
+        partialVisibility
+        minTopValue={100}
         onChange={isVisible =>
           once &&
           isVisible &&
