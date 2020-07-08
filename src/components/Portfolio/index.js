@@ -21,7 +21,7 @@ const Portfolio = () => {
               demo
               image {
                 childImageSharp {
-                  fluid(maxWidth: 360, maxHeight: 240) {
+                  fluid(maxWidth: 360) {
                     ...GatsbyImageSharpFluid
                   }
                 }
