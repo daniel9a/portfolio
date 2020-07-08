@@ -84,7 +84,7 @@ const Resume = () => {
                       {({ opacity, transform }) => (
                         <Col md="2" style={{ opacity, transform }}>
                           <Img
-                            className="logo shadow-lg mb-sm-3"
+                            className="logo shadow-lg mb-3"
                             fluid={node.frontmatter.logo.childImageSharp.fluid}
                           />
                         </Col>
@@ -106,8 +106,8 @@ const Resume = () => {
                       {({ opacity, transform }) => (
                         <Col style={{ opacity, transform }}>
                           <CardText>
-                            <h3>{node.frontmatter.position}</h3>
-                            <h4>{node.frontmatter.company}</h4>
+                            <h4>{node.frontmatter.position}</h4>
+                            <h5>{node.frontmatter.company}</h5>
                             <h5>
                               {node.frontmatter.startDate} -{" "}
                               {node.frontmatter.endDate}
