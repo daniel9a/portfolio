@@ -4,10 +4,10 @@ slug: ccgroup
 order: 2
 company: CCGroup
 position: Software Engineer
-startDate: September 2019
-endDate: Current
-location: San Mateo, California
 logo: /img/ccgroup-logo.jpg
+startDate: September 2019
+endDate: November 2020
+location: San Mateo, California
 skills:
   - c++
   - mssql
